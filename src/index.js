@@ -19,7 +19,6 @@ function refreshWeather(response) {
 }
 
 function formatDate(currentDate) {
-  console.log(currentDate);
   let days = [
     "Sunday",
     "Monday",

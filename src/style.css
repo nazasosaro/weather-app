@@ -29,6 +29,14 @@ body {
   color: #fff;
   margin-left: 5px;
   padding: 15px 20px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.search-form-button:hover {
+  background-color: #fff;
+  color: rgb(149, 190, 244);
+  border: none;
 }
 
 main {
