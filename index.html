@@ -14,16 +14,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+
     <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="" searh-form>
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="button" value="Search" class="search-form-button" />
         </form>
@@ -37,7 +39,9 @@
             >
               location_on
             </span>
-            Location
+            <span class="weather-app-city-name" id="weather-app-city-name">
+              Location
+            </span>
           </h1>
           <p class="weather-app-current-time">Saturday 1, 13:43</p>
           <div class="weather-app-data">
@@ -66,5 +70,6 @@
         hosted on Netlify
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
