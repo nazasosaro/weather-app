@@ -2,6 +2,7 @@ function refreshWeather(response) {
   let cityElement = document.querySelector("#weather-app-city-name");
   let timeElement = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
   let temperaturElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let conditionELement = document.querySelector("#condition");
@@ -12,6 +13,7 @@ function refreshWeather(response) {
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   temperaturElement.innerHTML = Math.round(temperature);
   conditionELement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;

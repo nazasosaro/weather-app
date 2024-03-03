@@ -63,6 +63,13 @@ main {
   font-size: 45px;
 }
 
+.weather-app-icon {
+  position: relative;
+  top: 8px;
+  width: 70px;
+  height: 70px;
+}
+
 .weather-app-value {
   font-size: 60px;
 }
