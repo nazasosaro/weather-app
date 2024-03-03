@@ -19,31 +19,43 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" />
-          <input type="button" value="Search" />
+        <form class="" searh-form>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            class="search-form-input"
+          />
+          <input type="button" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div>
-          <h1>Location</h1>
-          <p>Saturday 1, 13:43</p>
-          <p>
-            <span>☁</span>
-            <span>27</span>
-            <span>°C</span>
+          <h1 class="weather-app-city">
+            <span
+              class="material-symbols-outlined"
+              id="weather-app-symbol-location"
+            >
+              location_on
+            </span>
+            Location
+          </h1>
+          <p class="weather-app-current-time">Saturday 1, 13:43</p>
+          <div class="weather-app-data">
+            <span class="weather-app-emoji">☁</span>
+            <span class="weather-app-value">27</span>
+            <span class="weather-app-unit">°C</span>
             <br />
-            <span>Cloudy</span>
-          </p>
+            <span class="weather-app-condition">Cloudy</span>
+          </div>
         </div>
-        <div>
+        <div class="weather-app-details">
           <div>
-            <span>94%</span>
+            <span><strong>94%</strong></span>
             <br />
             Humidity
           </div>
           <div>
-            <span>3.6 km/h</span>
+            <span><strong>3.6 km/h</strong></span>
             <br />
             Wind
           </div>
