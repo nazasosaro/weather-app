@@ -1,4 +1,5 @@
 function refreshWeather(response) {
+  console.log(response.data);
   let cityElement = document.querySelector("#weather-app-city-name");
   let timeElement = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
@@ -13,7 +14,9 @@ function refreshWeather(response) {
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   temperaturElement.innerHTML = Math.round(temperature);
-  conditionELement.innerHTML = response.data.condition.description;
+  conditionELement.innerHTML = capitalizeFirstLetterOfEachWord(
+    response.data.condition.description
+  );
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = response.data.wind.speed;
 }
@@ -41,6 +44,18 @@ function formatDate(currentDate) {
   }
 
   return `${day} ${date}, ${hours}:${minutes}`;
+}
+
+function capitalizeFirstLetter(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function capitalizeFirstLetterOfEachWord(sentence) {
+  let words = sentence.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = capitalizeFirstLetter(words[i]);
+  }
+  return words.join(" ");
 }
 
 function searchCity(city) {
