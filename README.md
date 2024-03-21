@@ -1,4 +1,4 @@
-# My First SheCodes Project - Weather App
+# Weather App
 
 ## Table of contents
 
