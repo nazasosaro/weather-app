@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Preview](#preview)
   - [Links](#links)
 - [My process](#my-process)
   - [Build with](#build-with)
@@ -14,8 +14,8 @@ Users can search for specific countries and view the current temperature, humidi
 and the forecast for the next four days.
 The primary focus of this project was to demonstrate the integration of the SheCodes API and the manipulation of weather data.
 
-### Screenshot
-<div align='center'>
+### Preview
+<div>
     <img src='./images/weather-app.png'width="400" />
 </div>
 
