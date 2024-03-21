@@ -16,7 +16,7 @@ The primary focus of this project was to demonstrate the integration of the SheC
 
 ### Screenshot
 <div align='center'>
-    <img src='./images/weather-app.png'width="400" />
+    
 </div>
 
 ### Links
